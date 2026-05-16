@@ -1,0 +1,34 @@
+---
+title: What WizField AI Does Not Automate
+description: Understand the current WizField AI automation boundaries for sending, sequences, CRM mutation, attribution, and self-learning claims.
+---
+
+WizField AI does not run autonomous customer outreach. Current AI behavior excludes auto-send, background send, drip sequences, retries from outcomes, CRM mutation from outcomes, and self-learning claims.
+
+## Do Not Treat AI Drafts as Automatic Messages
+
+Operator Copilot can generate customer SMS follow-up drafts, but draft generation is not message sending. The draft is a proposed message for staff review.
+
+Guarded send requires the right feature flags, `calls.view`, `messaging.send`, and human confirmation through the WizField messaging path.
+
+## Do Not Use Outcomes as Automation Triggers
+
+Copilot outcome observation is read-only. WizField can derive whether a customer replied after an outbound anchor message in the same conversation thread.
+
+That observation does not trigger auto-send, background send, drip campaigns, retries, or sequences.
+
+## Do Not Mutate CRM Records From Outcome Observation
+
+Phase 4 outcome observation does not write customer, lead, job, estimate, invoice, or other CRM state. Outcome fields are presentation behavior, not CRM automation.
+
+Hybrid voice CRM lead creation on webhook is policy-bound intake behavior. It is not Copilot autonomy.
+
+## Do Not Claim Causal Attribution or Self-Learning
+
+WizField AI outcome observation is temporal correlation in a messaging thread. It is not causal attribution, marketing ROI proof, or self-learning behavior.
+
+WizField AI must not claim that the system learns from customer replies or improves itself from outcomes unless a future approved product phase explicitly changes that truth.
+
+## Continue With AI SMS Drafts
+
+For the guarded draft and send flow, read [How AI SMS Drafts Work](how-ai-sms-drafts-work). For Business Brain V1 boundaries, read [How Business Brain V1 Works](how-business-brain-v1-works).

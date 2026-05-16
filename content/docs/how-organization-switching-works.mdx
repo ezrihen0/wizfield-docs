@@ -1,0 +1,34 @@
+---
+title: How Organization Switching Works
+description: Learn how WizField switches active business workspaces through session-backed organization context and a full navigation reset.
+---
+
+WizField switches businesses through an explicit organization switcher flow. The active organization comes from the authenticated session, and successful switching navigates to `/home` so stale client state is cleared.
+
+## Use the Supported Organization Switcher
+
+Users with memberships in more than one organization can switch businesses from the supported switcher flow. A user must be a member of the target organization before WizField allows the switch.
+
+WizField rejects a switch to an organization where the user is not a member. The engineering closeout records this forbidden switch path as failing safely with `organization_access_forbidden`.
+
+## Trust the Session-Backed Active Organization
+
+WizField does not treat an arbitrary frontend organization ID as the authority for tenant access. Tenant-owned requests resolve the actor, active organization, membership, role, and permissions from authenticated context.
+
+This prevents a user from changing the business context by editing client state or passing a different organization ID from the browser.
+
+## Reset Product Context After Switching
+
+After a successful organization switch, WizField performs a full navigation to `/home`. This reset clears stale client state and reloads the app under the selected active organization.
+
+The active organization changes the context for dashboard, customers, leads, jobs, estimates, invoices, settings, search, calls, messaging, reports, booking, and portal-adjacent surfaces.
+
+## Show a Simpler Workspace Display for One Business
+
+Single-membership users do not need a fake switcher. WizField can show a simple current-workspace display when a user belongs to only one organization.
+
+Multi-business capability remains a core product differentiator, but the user interface should match the user's actual membership context.
+
+## Continue With Tenant Isolation
+
+For the data boundary behind organization switching, read [How WizField Keeps Business Data Organization-Scoped](how-wizfield-keeps-business-data-organization-scoped). For the broader workspace model, read [Multi-Business Workspaces in WizField](multi-business-workspaces-in-wizfield).

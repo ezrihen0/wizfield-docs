@@ -1,0 +1,34 @@
+---
+title: How WizField Keeps Business Data Organization-Scoped
+description: Understand how WizField protects tenant-owned business records by scoping product requests to the active organization.
+---
+
+WizField keeps business data organization-scoped. Tenant-owned reads, updates, deletes, counts, lists, search, dashboard data, automations, and communication flows must stay within the active organization.
+
+## Treat Organizations as Tenant Boundaries
+
+Organizations are the top-level tenant boundary for WizField business data. Users are global identities, and memberships connect users to organizations.
+
+Platform-owned concepts remain separate from organization-owned business records, public-access resources, immutable snapshots, and provider or integration records.
+
+## Validate Membership on Tenant-Owned Requests
+
+Every tenant-owned request resolves actor, active organization, membership, role, and permissions. Backend membership validation is authoritative.
+
+Frontend state can help display the current business context, but frontend state is not trusted for authorization by itself.
+
+## Scope Business Records to the Active Organization
+
+WizField must not fetch tenant-owned data by ID alone. Tenant-owned reads, updates, deletes, counts, and lists must include organization scope.
+
+This rule applies across normal product surfaces, including customers, leads, jobs, estimates, invoices, settings, search, dashboard aggregates, automations, calls, messaging, reports, booking, and portal-adjacent context.
+
+## Fail Cross-Organization Access Safely
+
+Cross-organization access is forbidden. The engineering closeout records direct foreign-organization negative reads for customer, lead, job, estimate, and invoice records as failing safely.
+
+Portal token flows and public booking also need organization proof. Public routes must not expose internal records by bare UUID alone or silently default to the wrong tenant.
+
+## Continue With Organization Switching
+
+For how users intentionally change active business context, read [How Organization Switching Works](how-organization-switching-works). For the multi-business model, read [Multi-Business Workspaces in WizField](multi-business-workspaces-in-wizfield).

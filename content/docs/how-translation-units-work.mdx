@@ -1,0 +1,38 @@
+---
+title: How Translation Units Work
+description: Learn how Language Store measures customer-output translation usage with translation units, plan capacity, and add-on packs.
+---
+
+Translation units measure Language Store customer-output usage. In V1, 1 translation unit covers up to 1,000 source characters submitted for English customer-output generation.
+
+## Count Translation Usage in Units
+
+Language Store V1 measures customer-output translation usage in translation units instead of raw model tokens.
+
+One translation unit equals up to 1,000 source characters submitted for English customer-output generation. Each request rounds up to the nearest whole unit.
+
+## Count Regenerated Output Again
+
+Regenerated customer-facing English output consumes translation units again. This keeps usage accounting tied to each customer-output generation request.
+
+The unit model gives finance and support a stable packaging concept without exposing users to raw provider-token billing.
+
+## Understand Included Monthly Capacity
+
+English is always available and does not consume a paid worker-language slot.
+
+| Plan | Monthly customer-output translation units |
+|---|---|
+| Starter | 0 units by default |
+| Pro | 250 units per covered organization |
+| Business | 1000 units per covered organization |
+
+## Add Translation Usage Packs
+
+V1 recurring Translation Usage Packs add 250 monthly customer-output translation units. Each pack is allocated to one covered organization.
+
+Language Store does not use pooled floating translation capacity across all organizations on a Shared Billing Account.
+
+## Continue With Customer-Facing Output
+
+For where units apply, read [How Customer-Facing English Output Works](how-customer-facing-english-output-works). For organization-level worker language capacity, read [How Worker Language Preferences Work](how-worker-language-preferences-work).

@@ -1,0 +1,34 @@
+---
+title: Why Final Customer Documents Stay Stable
+description: Learn why WizField preserves approved customer-facing output with immutable snapshots after estimate and invoice documents are finalized.
+---
+
+Final customer documents stay stable because WizField uses immutable snapshots where historical truth matters. Later language, preference, prompt, provider, or quality changes must not rewrite approved customer-facing output.
+
+## Preserve Historical Customer-Facing Truth
+
+WizField already treats generated invoices, estimates, reports, warranties, and similar artifacts as historical records where snapshot accuracy matters.
+
+Language Store inherits that rule. Once a quote or invoice reaches the snapshot-safe point, the chosen English customer-facing output becomes immutable document truth.
+
+## Reject Translation Only at Final PDF Generation
+
+Language Store does not store only source text and translate only when a final PDF is generated. That model is rejected because it can create surprise output changes late in the workflow.
+
+Final-PDF-only translation would also make historical output unstable and couple document rendering to live translation behavior.
+
+## Freeze the Reviewed English Output
+
+Language Store uses a review pipeline before snapshot. A worker enters source text, WizField generates an English draft, the user reviews the output, and final approved English text is persisted.
+
+The customer-facing snapshot stores the frozen English text that was chosen at approval time.
+
+## Avoid Rewriting Documents After Later Changes
+
+Later changes to enabled languages, user preference, translation prompts, translation provider, or translation quality must not rewrite already-snapshotted customer documents.
+
+Historical translated document output remains unchanged even if an organization later disables a language that a worker previously used.
+
+## Continue With English Output
+
+For the review pipeline before snapshot, read [How Customer-Facing English Output Works](how-customer-facing-english-output-works). For usage accounting, read [How Translation Units Work](how-translation-units-work).

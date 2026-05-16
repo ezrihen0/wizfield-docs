@@ -1,0 +1,36 @@
+---
+title: How Business Brain V1 Works
+description: Learn how Business Brain V1 turns deterministic WizField dashboard data into a grounded daily brief and ranked action list.
+---
+
+Business Brain V1 creates a grounded daily brief on `/home` from deterministic WizField dashboard data. It diagnoses business attention areas and links users to product surfaces, but it does not execute actions.
+
+## Use Dashboard Data as the Source of Truth
+
+Business Brain V1 uses the office dashboard data class as its primary source. The Brain brief must be grounded in real dashboard fields, not unsupported model-generated facts.
+
+Inputs can include summary counts, quotes waiting for approval, unpaid invoices, follow-ups needed, today's scheduled jobs, recent completed jobs, recent leads, jobs, technicians, and services.
+
+## Show a Daily Intelligence Strip on Home
+
+Business Brain V1 appears as an intelligence strip on `/home` for office roles with dashboard access. The surface can include a brief, ranked top actions, grounding lines, and product links.
+
+Action cards are diagnostic. Clicking an action opens a relevant WizField module such as invoices, estimates, leads, jobs, or schedule. Clicking an action does not mutate records.
+
+## Rank Actions With Deterministic Rules
+
+Business Brain V1 uses rule-based diagnosis before or alongside language-model narrative. This keeps the experience useful and honest when a model provider is unavailable.
+
+Default high-priority signals include unpaid invoices and quotes waiting for approval. Other signals can include stale leads, follow-up jobs, and heavy schedule days.
+
+## Fall Back Safely When AI Narrative Is Unavailable
+
+If the dashboard load fails, WizField hides the Brain strip instead of showing an AI error wall. If the dashboard loads but language-model narrative fails, WizField can show deterministic-only copy from the same product data.
+
+This fallback keeps Business Brain V1 grounded in product truth and prevents unsupported claims.
+
+## Keep Business Brain V1 Non-Autonomous
+
+Business Brain V1 narrates and diagnoses. It does not answer calls, send SMS or email, mint portal links, publish Growth Center content, approve drafts, execute dispatch, or change pricing.
+
+For broader AI boundaries, read [What WizField AI Does Not Automate](what-wizfield-ai-does-not-automate).

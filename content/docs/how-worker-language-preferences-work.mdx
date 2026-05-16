@@ -1,0 +1,34 @@
+---
+title: How Worker Language Preferences Work
+description: Learn how Language Store lets organizations enable worker languages and users choose preferences per active organization.
+---
+
+Worker language preferences let each user choose a preferred language within an active organization. The organization controls which worker languages are enabled, and English is always available.
+
+## Enable Worker Languages by Organization
+
+Language Store uses organization-level worker language activation. Owners or admins manage which worker languages are active for the organization.
+
+Language activation and usage enforcement are organization-scoped. Effective Language Store rights are enforced per covered organization, not as a floating pool across all organizations on a billing account.
+
+## Choose a User Preference Within One Organization
+
+Each user can select a preferred language from the languages enabled for the active organization. The same user may have different preferred languages in different organizations.
+
+This keeps language preferences aligned with the active organization instead of making one global user preference apply everywhere.
+
+## Keep Organization Switching Separate From Language Switching
+
+Organization switching changes the active business workspace. Language switching changes the user's language preference inside that active organization.
+
+The two controls serve different purposes and should not be treated as the same product action.
+
+## Fall Back Safely When a Language Is Disabled
+
+If an organization disables a language that a user previously selected, the user must safely fall back to English for that organization.
+
+Historical translated document output remains unchanged. The user's preference record may remain stored for future reuse if that language is re-enabled later.
+
+## Continue With Customer-Facing English Output
+
+For how worker-entered text becomes English customer output, read [How Customer-Facing English Output Works](how-customer-facing-english-output-works). For Language Store's broader scope, read [What Is WizField Language Store?](what-is-wizfield-language-store).

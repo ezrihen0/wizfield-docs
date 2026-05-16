@@ -1,0 +1,34 @@
+---
+title: How Growth Center Opportunities Work
+description: Learn how WizField Growth Center uses CRM-derived opportunities, lifecycle controls, and convert-to-draft handoffs.
+---
+
+Growth Center Opportunities are organization-scoped marketing suggestions derived from WizField CRM signals. Publisher roles can review, refresh, dismiss, archive, and convert opportunities into content drafts.
+
+## Use CRM Signals to Find Marketing Opportunities
+
+Growth Center Opportunities turn operational signals into marketing suggestions. The Growth Center source of truth identifies jobs and inspections as example signal sources feeding opportunities.
+
+Opportunities stay inside the active organization. Growth Center does not use a client-supplied organization ID to change tenant context.
+
+## Manage the Opportunity Lifecycle
+
+Growth Center stores opportunities with lifecycle timestamps and dedupe behavior. Users with publisher permissions can refresh, dismiss, archive, and convert opportunities.
+
+Dispatcher access is more limited. Dispatchers may read several Growth Center areas, but they are not publisher roles for opportunity refresh or conversion.
+
+## Convert an Opportunity Into a Draft
+
+Opportunity conversion creates a content draft and links the opportunity to the created draft. This handoff keeps the workflow explicit: an opportunity becomes a draft before publishing.
+
+Converting an opportunity does not publish content. Publishing requires a separate explicit publish-now or publish-schedule action.
+
+## Keep Opportunities Organization-Scoped
+
+Growth Center tables are organization-scoped. Regular tenant users should not see or act on another organization's opportunities.
+
+Marketing APIs use session organization context, not alternate organization IDs in query parameters or request bodies.
+
+## Continue With Publishing
+
+For the next step after a draft is ready, read [How Explicit Publishing Works](how-explicit-publishing-works). For Growth Center's overall scope, read [What Is WizField Growth Center?](what-is-wizfield-growth-center).

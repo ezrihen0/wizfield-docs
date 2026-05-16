@@ -1,0 +1,40 @@
+---
+title: How Customer-Facing English Output Works
+description: Understand how Language Store turns supported worker-entered source text into reviewed English customer-facing output.
+---
+
+Customer-facing English output lets workers enter supported dynamic text in an enabled non-English language, generate an English draft, review it, and persist the chosen English text for customer use.
+
+## Generate an English Draft From Worker Source Text
+
+Language Store V1 supports a controlled translation pipeline. A worker enters source text, the source language is selected or inferred, and WizField generates an English customer-output draft.
+
+The generated provider draft is not automatically final customer text. A user reviews the English output inside the supported workflow before final customer-facing text is persisted.
+
+## Use Supported Estimate and Invoice Surfaces
+
+Language Store V1 starts with selected estimate and invoice text that becomes customer-facing snapshot output.
+
+The first V1 surfaces are:
+
+- estimate line-item customer-facing names
+- estimate line-item customer-facing descriptions
+- invoice line-item customer-facing names
+- invoice line-item customer-facing descriptions
+- manual line text entered in estimate and invoice composition flows that becomes customer-facing snapshot text
+
+## Save the Final Chosen English Text
+
+Final chosen English may be the generated provider draft accepted as-is or a user-reviewed English edit. WizField must persist the exact final chosen English text approved for customer-facing use.
+
+This distinction matters because the generated draft and the final approved customer-facing output are different product concepts.
+
+## Avoid Translating Every Customer-Visible Field
+
+Language Store V1 does not expand first-pass translation to every customer-visible field in WizField. Receipts, job completion summaries, email bodies, and SMS bodies are excluded until separately approved.
+
+Customer-selectable output language, bilingual PDFs, legal packs, warranty clauses, and jurisdiction-specific inspection packs are also outside V1.
+
+## Continue With Snapshot Stability
+
+For how approved output remains stable in customer documents, read [Why Final Customer Documents Stay Stable](why-final-customer-documents-stay-stable). For usage accounting, read [How Translation Units Work](how-translation-units-work).

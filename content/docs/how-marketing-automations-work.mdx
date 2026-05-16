@@ -1,0 +1,34 @@
+---
+title: How Marketing Automations Work
+description: Learn how Growth Center Automations V1 uses rules and runs to suggest or create drafts without auto-publishing content.
+---
+
+Growth Center Automations V1 uses rules and runs to support opportunity-triggered marketing workflows. Automations can suggest or create drafts, but V1 does not auto-publish content.
+
+## Use Automations Inside Growth Center
+
+Growth Center automations belong to the `/marketing` product area. They are not the same as legacy CRM `/automations` for inventory or pricebook automation.
+
+Marketing automation capabilities are RBAC-derived inside Growth Center today. Runtime Growth Center monetization or Stripe entitlement gates are not wired into the marketing module.
+
+## Create Rules and Observe Runs
+
+Automations V1 includes rules and runs. Users with publisher permissions can create automation rules, preview behavior, and observe automation runs.
+
+Runs can persist outcomes such as draft creation. Some cooldown skips may not persist a row, so the presence or absence of a run row should not be treated as the only user-facing truth.
+
+## Keep Automations Draft-Centered
+
+Automations V1 supports suggest-only or auto-create-draft behavior. When an automation creates a draft, that draft still needs normal review and explicit publishing.
+
+Automation runs can link to a created marketing content draft, but the automation does not bypass the draft workflow.
+
+## Do Not Auto-Publish From Automations V1
+
+Growth Center Automations V1 does not auto-publish. Selective auto-publish after review maturity is future scope, not current V1 behavior.
+
+Scheduled or scanner automation triggers beyond opportunity-facing V1 are also deferred scope.
+
+## Continue With Explicit Publishing
+
+For the human-controlled posting model, read [How Explicit Publishing Works](how-explicit-publishing-works). For opportunity-driven marketing workflows, read [How Growth Center Opportunities Work](how-growth-center-opportunities-work).

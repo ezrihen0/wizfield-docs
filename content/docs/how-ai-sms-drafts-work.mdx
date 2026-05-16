@@ -1,0 +1,40 @@
+---
+title: How AI SMS Drafts Work
+description: Learn how WizField Operator Copilot creates, edits, dismisses, sends, and observes guarded customer SMS follow-up drafts.
+---
+
+AI SMS drafts are Operator Copilot follow-up drafts for calls. WizField can generate a draft, let staff edit or dismiss it, and send it only through guarded human-confirmed messaging.
+
+## Generate a Copilot SMS Draft From Calls
+
+Operator Copilot SMS drafts live on the `/calls` surface. Draft generation requires the AI foundation, Operator Copilot, calls surface, and SMS draft workflow flags to be enabled.
+
+Draft generation can use an optional language-model path when enabled. If the language-model path is unavailable, WizField can fall back to template generation.
+
+## Keep Drafts Separate From Messaging Truth
+
+WizField stores Copilot drafts in the operator draft lifecycle. Drafts can be active, dismissed, or sent.
+
+Messaging execution truth remains in WizField messaging records. A sent Copilot draft links to the outbound message record, but the draft store does not replace messaging execution truth.
+
+## Review and Edit Before Sending
+
+AI SMS drafts are reviewable product drafts. Staff can inspect and edit draft text before sending.
+
+The draft flow is not an autonomous send workflow. AI output should be treated as a proposed customer message that a human confirms before the message leaves WizField.
+
+## Send Only Through Guarded Messaging
+
+Guarded send requires `calls.view` and `messaging.send`. WizField sends Copilot customer SMS through the canonical messaging service rather than a telephony shortcut.
+
+The Send affordance appears only when the guarded send path and user permissions allow it.
+
+## Observe Replies Without Mutating CRM Records
+
+After a Copilot SMS is sent, outcome observation can read messaging thread replies after the outbound anchor message. This outcome is read-only.
+
+Outcome observation does not mutate CRM records, trigger retries, start drip campaigns, or prove causal attribution.
+
+## Continue With AI Boundaries
+
+For explicit automation limits, read [What WizField AI Does Not Automate](what-wizfield-ai-does-not-automate). For the overall AI scope, read [What WizField AI Does Today](what-wizfield-ai-does-today).

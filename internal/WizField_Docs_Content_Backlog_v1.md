@@ -51,18 +51,18 @@ Status values:
 
 | Page Title | Category | Page Type | Priority | Batch | Truth Sources | Status | Internal Links Needed | Notes |
 |---|---|---|---|---|---|---|---|---|
-| How Organization Switching Works | Product Foundations | Concept | P1 | Launch Batch 2 | WizField Master Source of Truth | Planned | Multi-Business Workspaces in WizField | Verify active organization behavior. |
-| How WizField Keeps Business Data Organization-Scoped | Product Foundations | Concept | P1 | Launch Batch 2 | WizField Master Source of Truth; codebase evidence | Planned | Organization Switching | Avoid exposing implementation-only database detail. |
-| How Business Brain V1 Works | AI in WizField | Concept | P1 | Launch Batch 2 | WizField AI Master Source of Truth | Planned | What WizField AI Does Today | Keep scope limited to shipped behavior. |
-| How AI SMS Drafts Work | AI in WizField | Workflow Guide | P1 | Launch Batch 2 | WizField AI Master Source of Truth | Planned | Guarded AI SMS Sending | Clarify review boundaries. |
-| What WizField AI Does Not Automate | AI in WizField | FAQ | P1 | Launch Batch 2 | WizField AI Master Source of Truth | Planned | What WizField AI Does Today | Explicitly avoid roadmap claims. |
-| How Growth Center Opportunities Work | Growth Center | Concept | P1 | Launch Batch 2 | Growth Center Source of Truth | Planned | What Is WizField Growth Center? | Verify opportunity lifecycle. |
-| How Explicit Publishing Works | Growth Center | Workflow Guide | P1 | Launch Batch 2 | Growth Center Source of Truth | Planned | Content Drafts; Publish Jobs | Clarify human control. |
-| How Marketing Automations Work | Growth Center | Concept | P1 | Launch Batch 2 | Growth Center Source of Truth | Planned | Growth Center Opportunities | Verify automation status. |
-| How Worker Language Preferences Work | Language Store | Concept | P1 | Launch Batch 2 | Language Store Source of Truth | Planned | What Is WizField Language Store? | Verify fallback behavior. |
-| How Customer-Facing English Output Works | Language Store | Concept | P1 | Launch Batch 2 | Language Store Source of Truth | Planned | Worker Language Preferences | Clarify customer-facing English boundary. |
-| Why Final Customer Documents Stay Stable | Language Store | Concept | P1 | Launch Batch 2 | Language Store Source of Truth | Planned | Translation Units | Verify snapshot behavior. |
-| How Translation Units Work | Language Store | Concept | P1 | Launch Batch 2 | Language Store Source of Truth | Planned | Customer-Facing English Output | Avoid internal schema exposure. |
+| How Organization Switching Works | Product Foundations | Concept | P1 | Launch Batch 2 | WizField Master Source of Truth; WizField Engineering Closeout and Verification | Published | Multi-Business Workspaces in WizField; Business Data Organization-Scoped | Published in Package 3. |
+| How WizField Keeps Business Data Organization-Scoped | Product Foundations | Concept | P1 | Launch Batch 2 | WizField Master Source of Truth; WizField Engineering Closeout and Verification | Published | Organization Switching; Multi-Business Workspaces in WizField | Published in Package 3. |
+| How Business Brain V1 Works | AI in WizField | Concept | P1 | Launch Batch 2 | WizField AI Master Source of Truth; Business Brain V1 Spec | Published | What WizField AI Does Today; What WizField AI Does Not Automate | Published in Package 3. |
+| How AI SMS Drafts Work | AI in WizField | Workflow Guide | P1 | Launch Batch 2 | WizField AI Master Source of Truth; AI Engineering Closeout and Gap Register | Published | What WizField AI Does Today; What WizField AI Does Not Automate | Published in Package 3. |
+| What WizField AI Does Not Automate | AI in WizField | FAQ | P1 | Launch Batch 2 | WizField AI Master Source of Truth | Published | What WizField AI Does Today; AI SMS Drafts; Business Brain V1 | Published in Package 3. |
+| How Growth Center Opportunities Work | Growth Center | Concept | P1 | Launch Batch 2 | Growth Center Source of Truth; Growth Center Closeout and Verification | Published | What Is WizField Growth Center?; Explicit Publishing | Published in Package 3. |
+| How Explicit Publishing Works | Growth Center | Workflow Guide | P1 | Launch Batch 2 | Growth Center Source of Truth; Growth Center Closeout and Verification | Published | Growth Center Opportunities; Marketing Automations | Published in Package 3. |
+| How Marketing Automations Work | Growth Center | Concept | P1 | Launch Batch 2 | Growth Center Source of Truth; Growth Center Closeout and Verification | Published | Growth Center Opportunities; Explicit Publishing | Published in Package 3. |
+| How Worker Language Preferences Work | Language Store | Concept | P1 | Launch Batch 2 | Language Store Source of Truth | Published | What Is WizField Language Store?; Customer-Facing English Output | Published in Package 3. |
+| How Customer-Facing English Output Works | Language Store | Concept | P1 | Launch Batch 2 | Language Store Source of Truth | Published | Worker Language Preferences; Final Customer Documents; Translation Units | Published in Package 3. |
+| Why Final Customer Documents Stay Stable | Language Store | Concept | P1 | Launch Batch 2 | Language Store Source of Truth; WizField Master Source of Truth | Published | Customer-Facing English Output; Translation Units | Published in Package 3. |
+| How Translation Units Work | Language Store | Concept | P1 | Launch Batch 2 | Language Store Source of Truth | Published | Customer-Facing English Output; Worker Language Preferences | Published in Package 3. |
 
 ---
 

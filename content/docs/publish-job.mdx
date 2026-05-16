@@ -1,0 +1,28 @@
+---
+title: Publish Job
+description: Understand a Publish Job as the explicit Growth Center publishing action that controls outbound posting and scheduling.
+---
+
+A Publish Job is the Growth Center record that controls outbound publishing. Draft metadata alone does not post content.
+
+## Define Publish Job in Growth Center
+
+Growth Center publishing is always explicit. A publish-now action or scheduled publishing action creates a Publish Job.
+
+The Publish Job has its own UTC `scheduled_at` value for scheduled publishing or represents a publish-now action.
+
+## Separate Publish Jobs From Draft Metadata
+
+A content draft can include scheduling metadata, but draft `scheduled_at` is metadata only.
+
+Growth Center must not silently post content from draft metadata, opportunity conversion, campaign placement, or automation runs.
+
+## Track Publish Attempts
+
+Publish Jobs can produce publish attempts. Attempt-level outcomes can record provider execution details.
+
+Publish attempts are not reach, impression, click, ROI, or provider engagement metrics.
+
+## Continue With Explicit Publishing
+
+For the full model, read [How Explicit Publishing Works](how-explicit-publishing-works). For Growth Center exclusions, read [What Growth Center Does Not Do Yet](what-growth-center-does-not-do-yet).

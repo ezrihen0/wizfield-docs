@@ -1,0 +1,28 @@
+---
+title: Document Snapshot
+description: Understand a Document Snapshot as the stable customer-facing document truth that should not be rewritten by later changes.
+---
+
+A Document Snapshot is stable customer-facing document truth. Once a supported quote or invoice reaches the snapshot-safe point, later changes must not rewrite it.
+
+## Define Document Snapshot in WizField
+
+WizField uses immutable snapshots where historical document truth matters. A later settings change must not silently rewrite a previously generated tenant document.
+
+Language Store follows the same rule for supported customer-facing English output.
+
+## Preserve Approved English Output
+
+Language Store V1 uses a review-and-snapshot pipeline. A worker enters source text, WizField generates an English customer-output draft, and the user reviews the English output.
+
+The final approved customer-facing output is persisted before quote or invoice snapshot history stores the frozen English text.
+
+## Avoid Live Translation During Rendering
+
+Already-snapshotted customer documents must not be coupled to live translation behavior.
+
+Later changes to enabled languages, preferences, prompts, providers, or translation quality must not rewrite already-snapshotted customer documents.
+
+## Continue With Document Stability
+
+For the full stability rule, read [Why Final Customer Documents Stay Stable](why-final-customer-documents-stay-stable). For supported English output, read [How Customer-Facing English Output Works](how-customer-facing-english-output-works).

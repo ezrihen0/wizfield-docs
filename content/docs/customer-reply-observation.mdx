@@ -1,0 +1,28 @@
+---
+title: Customer Reply Observation
+description: Understand Customer Reply Observation as read-only WizField AI outcome hydration from messaging threads after a sent Copilot SMS.
+---
+
+Customer Reply Observation is read-only outcome hydration after a sent Copilot SMS. It checks messaging thread replies after the outbound anchor message.
+
+## Define Customer Reply Observation in WizField AI
+
+WizField AI can observe whether a customer replied after a Copilot SMS was sent. The observation is derived from messaging thread records.
+
+The observation starts from the outbound anchor message and looks for the first later inbound message in the same conversation.
+
+## Keep Observation Read-Only
+
+Customer Reply Observation does not mutate CRM records, send follow-up messages, retry messages, or start drip campaigns.
+
+Observation should not become an action engine.
+
+## Avoid Causal and Self-Learning Claims
+
+Customer Reply Observation is temporal correlation in a messaging thread. It is not causal attribution, marketing ROI proof, or self-learning behavior.
+
+WizField should not claim that a reply proves the AI caused the outcome.
+
+## Continue With AI Boundaries
+
+For AI automation limits, read [What WizField AI Does Not Automate](what-wizfield-ai-does-not-automate). For Copilot SMS behavior, read [How AI SMS Drafts Work](how-ai-sms-drafts-work).

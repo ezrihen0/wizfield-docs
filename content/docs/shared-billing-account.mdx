@@ -1,0 +1,28 @@
+---
+title: Shared Billing Account
+description: Understand a Shared Billing Account as the WizField payer and subscription authority that can cover one or more organizations.
+---
+
+A Shared Billing Account is the payer and subscription authority for WizField platform billing. It may cover one or more organizations under one entitlement.
+
+## Define Shared Billing Account in WizField
+
+WizField billing authority is shared-billing-account based. The `billing_accounts` layer is the authoritative payer and subscription layer.
+
+Organization billing linkage projects coverage to organizations, but it is not the subscription authority itself.
+
+## Cover Multiple Organizations Under One Entitlement
+
+A single Shared Billing Account may cover multiple organizations under one entitlement. Plan enforcement resolves from the active organization context through the linked Shared Billing Account.
+
+This keeps platform billing separate from tenant CRM invoices and payment records.
+
+## Respect Current Business Coverage Limits
+
+Current plan structure in local repo truth defines Starter as 1 business, Pro as up to 3 businesses, and Business as an expanded local model with no fixed hard cap currently enforced.
+
+Do not treat the Business plan as having a fixed hard cap unless a future canonical product decision adds one.
+
+## Continue With Billing Coverage
+
+For the broader concept, read [Shared Billing Accounts in WizField](shared-billing-accounts-in-wizfield). For multi-business coverage, read [How Shared Billing Covers Multiple Businesses](how-shared-billing-covers-multiple-businesses).

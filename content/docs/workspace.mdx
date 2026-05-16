@@ -1,0 +1,28 @@
+---
+title: Workspace
+description: Understand a WizField workspace as an organization-scoped business environment for field-service records and operations.
+---
+
+A WizField workspace is a business environment backed by an organization. Business records remain scoped to that organization instead of becoming one shared pool.
+
+## Define Workspace in WizField
+
+WizField uses organization-scoped workspaces to represent businesses. The organization is the top-level tenant boundary for workspace data.
+
+Workspace data can include customers, leads, jobs, estimates, invoices, settings, communications, reports, booking context, and portal-adjacent context.
+
+## Keep Workspace Data Organization-Scoped
+
+Each workspace keeps its business data attached to the organization that owns it. Cross-organization access is forbidden for regular tenant users.
+
+This model lets one user work across multiple businesses without merging the businesses' records.
+
+## Switch Between Workspaces Explicitly
+
+Multi-business users switch workspaces through the supported organization switcher flow. The active organization comes from the authenticated session.
+
+After a successful switch, WizField navigates to `/home` so stale client state is cleared and the app reloads under the selected organization context.
+
+## Continue With Multi-Business Workspaces
+
+For the full model, read [Multi-Business Workspaces in WizField](multi-business-workspaces-in-wizfield). For organization switching, read [How Organization Switching Works](how-organization-switching-works).

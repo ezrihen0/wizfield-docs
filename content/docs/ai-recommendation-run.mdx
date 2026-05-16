@@ -1,0 +1,28 @@
+---
+title: AI Recommendation Run
+description: Understand an AI Recommendation Run as WizField AI generation and audit trail data, not an action execution or messaging record.
+---
+
+An AI Recommendation Run records AI generation and audit trail data. It does not hold editable draft text, send state, or customer reply outcome state.
+
+## Define AI Recommendation Run in WizField
+
+WizField AI foundation includes recommendation-run audit behavior. The recommendation run records generation context such as tool trace and provider metadata.
+
+This supports traceability for AI-assisted features without turning the run itself into a product action.
+
+## Separate Recommendation Runs From Drafts
+
+Operator Copilot SMS drafts live in the draft lifecycle. Drafts can be active, dismissed, or sent.
+
+An AI Recommendation Run must not replace editable draft text or the operator draft lifecycle.
+
+## Separate Recommendation Runs From Messaging Truth
+
+Messaging execution truth remains in WizField messaging records. A sent Copilot draft links to an outbound message record.
+
+An AI Recommendation Run must not hold send state, replace messaging execution truth, trigger retries, or prove customer reply outcomes.
+
+## Continue With AI Scope
+
+For overall AI behavior, read [What WizField AI Does Today](what-wizfield-ai-does-today). For Business Brain behavior, read [How Business Brain V1 Works](how-business-brain-v1-works).

@@ -1,0 +1,28 @@
+---
+title: Active Organization
+description: Understand the active organization as the current WizField business context used for workspace data, permissions, and product behavior.
+---
+
+The active organization is the current business context for an authenticated WizField user. WizField uses it to scope business records, permissions, and product behavior.
+
+## Define Active Organization in WizField
+
+In WizField, an organization is the top-level tenant boundary for business data. The active organization is the organization currently selected in the authenticated session.
+
+WizField does not treat an arbitrary frontend organization ID as the authority for tenant access.
+
+## Use Active Organization for Product Context
+
+The active organization changes the user's context for dashboard, customers, leads, jobs, estimates, invoices, settings, search, calls, messaging, reports, booking, and portal-adjacent surfaces.
+
+This keeps each business workspace separate even when one user can access more than one organization.
+
+## Validate Membership Before Access
+
+Every tenant-owned request resolves the actor, active organization, membership, role, and permissions. Backend membership validation is authoritative.
+
+Cross-organization access is forbidden for regular tenant users.
+
+## Continue With Organization Switching
+
+For switching behavior, read [How Organization Switching Works](how-organization-switching-works). For tenant isolation, read [How WizField Keeps Business Data Organization-Scoped](how-wizfield-keeps-business-data-organization-scoped).

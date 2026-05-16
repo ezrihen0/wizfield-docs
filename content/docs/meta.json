@@ -32,6 +32,20 @@
     "how-customer-facing-english-output-works",
     "what-language-store-does-not-translate-in-v1",
     "why-final-customer-documents-stay-stable",
-    "how-translation-units-work"
+    "how-translation-units-work",
+    "glossary",
+    "active-organization",
+    "membership",
+    "workspace",
+    "shared-billing-account",
+    "marketing-opportunity",
+    "publish-job",
+    "automation-rule",
+    "worker-language",
+    "translation-unit",
+    "document-snapshot",
+    "ai-recommendation-run",
+    "guarded-send",
+    "customer-reply-observation"
   ]
 }

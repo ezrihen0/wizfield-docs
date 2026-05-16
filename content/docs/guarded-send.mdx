@@ -1,0 +1,28 @@
+---
+title: Guarded Send
+description: Understand Guarded Send as the human-confirmed WizField AI SMS send path that requires permissions and canonical messaging execution.
+---
+
+Guarded Send is the human-confirmed Copilot SMS send path. It requires the right permissions and sends through WizField messaging execution truth.
+
+## Define Guarded Send in WizField AI
+
+Operator Copilot can generate SMS follow-up drafts for calls. Guarded Send is the controlled path that lets an authorized user send a reviewed draft.
+
+Guarded Send is not autonomous customer outreach.
+
+## Require Human Confirmation and Permissions
+
+Copilot guarded send requires `calls.view` and `messaging.send`. The Send affordance appears only when guarded send is enabled and user permissions allow it.
+
+Staff can review and edit AI SMS draft text before sending.
+
+## Use Canonical Messaging Execution
+
+WizField sends Copilot customer SMS through the canonical messaging service. Copilot must not bypass WizField messaging execution truth through a telephony shortcut.
+
+A sent Copilot draft links to the outbound message record.
+
+## Continue With AI SMS Drafts
+
+For the full draft lifecycle, read [How AI SMS Drafts Work](how-ai-sms-drafts-work). For review questions, read [Why Did an AI SMS Draft Require Review Before Sending?](why-did-an-ai-sms-draft-require-review-before-sending).

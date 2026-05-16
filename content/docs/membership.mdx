@@ -1,0 +1,28 @@
+---
+title: Membership
+description: Understand WizField membership as the link between a global user and an organization-specific role and permission set.
+---
+
+A membership links a WizField user to an organization. Roles and permissions belong to memberships, not globally to the user.
+
+## Define Membership in WizField
+
+WizField treats users and organizations as separate concepts. A user is a global identity, while an organization is the tenant boundary for a business workspace.
+
+A membership connects the user to one organization and carries that user's role and permissions for that organization.
+
+## Use Memberships for Role-Specific Access
+
+Because roles and permissions belong to memberships, the same user can have different access in different organizations.
+
+For example, a user may have owner-level access in one business and more limited access in another business if the user's memberships differ.
+
+## Validate Membership on Tenant-Owned Requests
+
+Every tenant-owned request resolves actor, active organization, membership, role, and permissions. Backend membership validation is authoritative.
+
+WizField should not authorize access from frontend state alone.
+
+## Continue With Workspace Boundaries
+
+For multi-business access, read [Multi-Business Workspaces in WizField](multi-business-workspaces-in-wizfield). For active organization behavior, read [Active Organization](active-organization).

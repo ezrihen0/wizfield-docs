@@ -87,18 +87,18 @@ Status values:
 
 | Page Title | Category | Page Type | Priority | Batch | Truth Sources | Status | Internal Links Needed | Notes |
 |---|---|---|---|---|---|---|---|---|
-| Glossary | Glossary | Concept | P2 | Launch Batch 4 | Published docs; canonical Source of Truth docs | Planned | All major concept pages | Publish after enough concept pages exist. |
-| Active Organization | Glossary | Concept | P2 | Launch Batch 4 | WizField Master Source of Truth | Planned | Organization Switching | Define without internal implementation detail. |
-| Membership | Glossary | Concept | P2 | Launch Batch 4 | WizField Master Source of Truth | Planned | Multi-Business Workspaces | Verify role and access language. |
-| Workspace | Glossary | Concept | P2 | Launch Batch 4 | WizField Master Source of Truth | Planned | Multi-Business Workspaces | Keep terminology consistent. |
-| Shared Billing Account | Glossary | Concept | P2 | Launch Batch 4 | Billing truth | Planned | Shared Billing Accounts in WizField | Align with billing pages. |
-| Trialing Subscription | Glossary | Concept | P2 | Launch Batch 4 | Billing truth | Planned | Activate Your WizField Subscription | Verify current state label. |
-| Marketing Opportunity | Glossary | Concept | P2 | Launch Batch 4 | Growth Center Source of Truth | Planned | Growth Center Opportunities | Align with Growth Center pages. |
-| Publish Job | Glossary | Concept | P2 | Launch Batch 4 | Growth Center Source of Truth | Planned | Explicit Publishing | Verify public-facing term. |
-| Automation Rule | Glossary | Concept | P2 | Launch Batch 4 | Growth Center Source of Truth | Planned | Marketing Automations | Verify shipped scope. |
-| Worker Language | Glossary | Concept | P2 | Launch Batch 4 | Language Store Source of Truth | Planned | Worker Language Preferences | Align with Language Store pages. |
-| Translation Unit | Glossary | Concept | P2 | Launch Batch 4 | Language Store Source of Truth | Planned | Translation Units | Avoid schema detail. |
-| Document Snapshot | Glossary | Concept | P2 | Launch Batch 4 | Language Store Source of Truth; product truth | Planned | Final Customer Documents | Verify product term. |
-| AI Recommendation Run | Glossary | Concept | P2 | Launch Batch 4 | WizField AI Master Source of Truth | Planned | What WizField AI Does Today | Avoid overclaiming automation. |
-| Guarded Send | Glossary | Concept | P2 | Launch Batch 4 | WizField AI Master Source of Truth | Planned | Guarded AI SMS Sending | Define human review boundary. |
-| Customer Reply Observation | Glossary | Concept | P2 | Launch Batch 4 | WizField AI Master Source of Truth | Planned | AI Reply Observation | Verify shipped behavior. |
+| Glossary | Glossary | Concept | P2 | Launch Batch 4 | Published docs; canonical Source of Truth docs | Published | All major concept pages | Published in Package 5. |
+| Active Organization | Glossary | Concept | P2 | Launch Batch 4 | WizField Master Source of Truth | Published | Organization Switching | Published in Package 5. |
+| Membership | Glossary | Concept | P2 | Launch Batch 4 | WizField Master Source of Truth | Published | Multi-Business Workspaces | Published in Package 5. |
+| Workspace | Glossary | Concept | P2 | Launch Batch 4 | WizField Master Source of Truth | Published | Multi-Business Workspaces | Published in Package 5. |
+| Shared Billing Account | Glossary | Concept | P2 | Launch Batch 4 | WizField Master Source of Truth; WizField Engineering Closeout and Verification | Published | Shared Billing Accounts in WizField | Published in Package 5. |
+| Billing State | Glossary | Concept | P2 | Launch Batch 4 | Billing truth | Review | Activate Your WizField Subscription; Billing Success Processing | Replaces uncertain Trialing Subscription candidate; `trialing` exists as an implementation billing status, but the exact public term was not found in canonical sources. |
+| Marketing Opportunity | Glossary | Concept | P2 | Launch Batch 4 | Growth Center Source of Truth | Published | Growth Center Opportunities | Published in Package 5. |
+| Publish Job | Glossary | Concept | P2 | Launch Batch 4 | Growth Center Source of Truth | Published | Explicit Publishing | Published in Package 5. |
+| Automation Rule | Glossary | Concept | P2 | Launch Batch 4 | Growth Center Source of Truth | Published | Marketing Automations | Published in Package 5. |
+| Worker Language | Glossary | Concept | P2 | Launch Batch 4 | Language Store Source of Truth | Published | Worker Language Preferences | Published in Package 5. |
+| Translation Unit | Glossary | Concept | P2 | Launch Batch 4 | Language Store Source of Truth | Published | Translation Units | Published in Package 5. |
+| Document Snapshot | Glossary | Concept | P2 | Launch Batch 4 | Language Store Source of Truth; product truth | Published | Final Customer Documents | Published in Package 5. |
+| AI Recommendation Run | Glossary | Concept | P2 | Launch Batch 4 | WizField AI Master Source of Truth | Published | What WizField AI Does Today | Published in Package 5. |
+| Guarded Send | Glossary | Concept | P2 | Launch Batch 4 | WizField AI Master Source of Truth | Published | AI SMS Drafts | Published in Package 5. |
+| Customer Reply Observation | Glossary | Concept | P2 | Launch Batch 4 | WizField AI Master Source of Truth | Published | What WizField AI Does Not Automate | Published in Package 5. |

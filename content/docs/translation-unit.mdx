@@ -1,0 +1,28 @@
+---
+title: Translation Unit
+description: Understand a Translation Unit as the Language Store V1 usage measure for customer-output English generation.
+---
+
+A Translation Unit is the Language Store V1 usage measure for English customer-output generation. One unit covers up to 1,000 submitted source characters.
+
+## Define Translation Unit in Language Store
+
+Language Store V1 measures customer-output translation usage in Translation Units.
+
+One Translation Unit equals up to 1,000 source characters submitted for English customer-output generation. Each request rounds up to the nearest whole unit.
+
+## Count Regenerated Output Again
+
+Regenerated output consumes Translation Units again. A new customer-output generation request is new usage, even when it starts from similar source text.
+
+This keeps usage accounting tied to generation requests rather than to only final document count.
+
+## Keep Units Organization-Scoped
+
+Language Store add-on packs and monthly Translation Units are allocated to a covered organization unless a later product rule explicitly makes an add-on account-wide.
+
+V1 does not use floating translation capacity across every organization on a billing account.
+
+## Continue With Translation Usage
+
+For usage details, read [How Translation Units Work](how-translation-units-work). For supported output surfaces, read [How Customer-Facing English Output Works](how-customer-facing-english-output-works).

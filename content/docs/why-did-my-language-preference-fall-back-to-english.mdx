@@ -1,0 +1,30 @@
+---
+title: Why Did My Language Preference Fall Back to English?
+description: Learn why Language Store may safely fall back to English when a worker language is disabled for the active organization.
+---
+
+Your language preference may fall back to English when the active organization disables the language you previously selected. English is always available and does not consume a paid language slot.
+
+## Check the Active Organization
+
+Language Store preferences are per user and per organization. The same user may use different preferred languages in different organizations.
+
+If you switch organizations, WizField uses the language preference and enabled-language settings for the new active organization.
+
+## Use Only Languages Enabled for the Organization
+
+Org owners or admins manage which worker languages are active for the organization. Regular staff can choose only from languages enabled for the active organization.
+
+If a language is not currently enabled for that organization, WizField must not continue using it as the active worker language.
+
+## Fall Back Safely to English
+
+When an organization disables a language that a user previously selected, WizField must safely fall back to English for that organization.
+
+The user's preference record may remain stored for future reuse if that language is re-enabled later.
+
+## Preserve Historical Customer Output
+
+Language fallback does not rewrite historical translated document output. Already-snapshotted customer-facing text remains unchanged.
+
+For preference behavior, read [How Worker Language Preferences Work](how-worker-language-preferences-work). For document stability, read [Why Final Customer Documents Stay Stable](why-final-customer-documents-stay-stable).

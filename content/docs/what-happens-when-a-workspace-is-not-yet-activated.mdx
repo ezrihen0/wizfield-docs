@@ -1,0 +1,28 @@
+---
+title: What Happens When a Workspace Is Not Yet Activated?
+description: Understand why a WizField workspace may not be ready until workspace creation, membership, and billing activation are confirmed.
+---
+
+A workspace that is not yet activated may not provide full CRM access. WizField needs a valid organization context, user membership, and any required billing synchronization before product access is reliable.
+
+## Separate Workspace Creation From Full Readiness
+
+Workspace creation establishes the organization that will own business records. Full readiness may also depend on membership, active organization context, and billing activation.
+
+WizField should not expose organization-owned CRM records unless the user is authorized for the active organization.
+
+## Wait for Billing State When Required
+
+Subscription activation depends on Stripe-backed billing synchronization. The checkout success redirect does not activate billing by itself.
+
+If the subscription state is not yet reconciled through verified Stripe webhook events, the workspace may remain in a not-yet-ready state.
+
+## Keep Owner Launch Activation Separate From Engineering Completion
+
+The engineering closeout records the billing and launch-surface work as complete for the foundation phase. Live Stripe checkout execution, live webhook delivery, final program launch approval, monitoring, and production replay remain owner activation scope.
+
+This distinction prevents a not-yet-activated workspace from being treated as an engineering contradiction.
+
+## Continue With Related Access Pages
+
+For signup access issues, read [Why Can't I Access the CRM After Signup?](why-cant-i-access-the-crm-after-signup). For checkout processing behavior, read [Why Does Billing Success Still Show Processing?](why-does-billing-success-still-show-processing).

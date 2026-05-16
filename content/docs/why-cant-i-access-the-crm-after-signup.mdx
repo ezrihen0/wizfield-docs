@@ -1,0 +1,28 @@
+---
+title: Why Can't I Access the CRM After Signup?
+description: Learn why WizField CRM access after signup may depend on workspace creation, organization membership, and billing activation state.
+---
+
+WizField CRM access depends on a valid account, a created workspace, membership in the active organization, and any required billing activation. Signup alone does not override workspace or subscription boundaries.
+
+## Confirm the First Workspace Exists
+
+WizField supports self-serve signup and first-workspace creation. The first workspace becomes an organization, which is the tenant boundary for business data.
+
+If the first workspace was not created or the user is not connected to the organization through membership, WizField cannot safely show organization-owned CRM records.
+
+## Confirm the Active Organization Context
+
+WizField resolves tenant-owned requests through actor, active organization, membership, role, and permissions. The active organization comes from the authenticated session.
+
+If a user belongs to more than one organization, the user may need to switch to the correct organization through the supported organization switcher flow.
+
+## Check Subscription Activation State
+
+WizField billing activation depends on Stripe-backed synchronization, not the checkout success redirect alone. Verified Stripe webhook events reconcile local billing state.
+
+If billing is still processing or live Stripe activation has not completed, access may remain limited until the product can confirm the subscription state.
+
+## Continue With Activation Help
+
+For billing behavior, read [Activate Your WizField Subscription](activate-your-wizfield-subscription). For workspace setup, read [Create Your WizField Workspace](create-your-wizfield-workspace). For organization switching, read [How Organization Switching Works](how-organization-switching-works).

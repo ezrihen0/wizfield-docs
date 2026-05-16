@@ -1,0 +1,28 @@
+---
+title: Why Does Billing Success Still Show Processing?
+description: Learn why WizField billing may still show processing after checkout and why Stripe webhooks are the subscription authority.
+---
+
+Billing success can still show processing because WizField does not activate billing from the checkout redirect alone. Stripe webhooks are authoritative for synchronizing subscription state.
+
+## Treat the Success Redirect as Confirmation of Return
+
+The billing success page confirms that the user returned from checkout. The redirect does not prove that the subscription state has been fully reconciled in WizField.
+
+WizField intentionally avoids treating the success page alone as activation proof because redirects can arrive before verified provider events are processed.
+
+## Wait for Stripe Webhook Synchronization
+
+Stripe is the active billing provider for WizField. Verified Stripe webhook events reconcile local billing state.
+
+Until WizField receives and validates the relevant subscription events, billing may appear to be processing.
+
+## Understand Owner Activation Scope
+
+The engineering foundation for Stripe-first shared billing is complete. Live Stripe checkout execution and live webhook delivery remain owner activation scope.
+
+This means production billing readiness depends on the live Stripe configuration and webhook confirmation, not only on the completed code path.
+
+## Continue With Subscription Activation
+
+For the full activation model, read [Activate Your WizField Subscription](activate-your-wizfield-subscription). For shared billing coverage, read [Shared Billing Accounts in WizField](shared-billing-accounts-in-wizfield).

@@ -1,0 +1,28 @@
+---
+title: Why Can't a Dispatcher Publish in Growth Center?
+description: Learn why Growth Center dispatchers can read several marketing areas but cannot perform publisher-only actions.
+---
+
+A dispatcher cannot publish in Growth Center because publishing is limited to publisher roles. Dispatcher access can include reading several Growth Center areas, but read access is not outbound publishing authority.
+
+## Separate Read Access From Publishing Authority
+
+Growth Center supports marketing office roles, including owner, admin, office admin, and dispatcher. These roles do not all have the same capabilities.
+
+Dispatchers can read several Growth Center areas, but they are not publisher roles for publishing actions.
+
+## Use Publisher Roles for Publish Jobs
+
+Growth Center publishing is controlled through explicit publish jobs. Owners, admins, and office admins can enqueue, cancel, retry, and list publish jobs.
+
+Dispatchers cannot publish, refresh opportunities as publishers, mutate campaigns, or mutate automations through publisher-only paths.
+
+## Keep Outbound Posting Explicit
+
+Growth Center does not silently post from draft metadata, opportunity conversion, or automation runs. A publish-now or publish-schedule action creates the publish job that controls outbound posting.
+
+This role boundary prevents read-only operational access from becoming external channel publishing authority.
+
+## Continue With Publishing Rules
+
+For the full publishing model, read [How Explicit Publishing Works](how-explicit-publishing-works). For role boundaries in Growth Center, read [What Is WizField Growth Center?](what-is-wizfield-growth-center).

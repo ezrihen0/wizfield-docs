@@ -1,0 +1,36 @@
+---
+title: How Shared Billing Covers Multiple Businesses
+description: Learn how one WizField Shared Billing Account can cover multiple organizations under plan-based business limits.
+---
+
+Shared billing covers multiple businesses through one billing account that owns the payer and subscription relationship. Organization billing linkage projects coverage to each covered organization.
+
+## Use One Billing Account as Subscription Authority
+
+WizField billing authority is shared-billing-account based. The `billing_accounts` layer is the authoritative payer and subscription layer.
+
+The organization billing linkage is coverage and entitlement projection. It does not replace the billing account as subscription authority.
+
+## Cover Organizations Under One Entitlement
+
+A single Shared Billing Account may cover multiple organizations under one entitlement. Plan enforcement resolves from the active organization context through the linked billing account.
+
+This model lets a multi-business owner use one subscription relationship while keeping each business's product data scoped to its own organization.
+
+## Understand Current Business Coverage Limits
+
+Current plan structure in local repo truth:
+
+| Plan | Business coverage |
+|---|---|
+| Starter | 1 business |
+| Pro | Up to 3 businesses |
+| Business | Expanded local model with no fixed hard cap currently enforced in local repo truth |
+
+Do not treat the Business plan as having a fixed hard cap unless a future canonical product decision adds one.
+
+## Separate Platform Billing From CRM Payments
+
+WizField platform billing is separate from tenant CRM invoice and payment records. A service invoice inside a workspace is not the same thing as the owner's WizField subscription.
+
+For workspace limits, read [Why Can't I Add Another Business?](why-cant-i-add-another-business). For the underlying concept, read [Shared Billing Accounts in WizField](shared-billing-accounts-in-wizfield).

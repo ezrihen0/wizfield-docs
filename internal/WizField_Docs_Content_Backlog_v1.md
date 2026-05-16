@@ -70,16 +70,16 @@ Status values:
 
 | Page Title | Category | Page Type | Priority | Batch | Truth Sources | Status | Internal Links Needed | Notes |
 |---|---|---|---|---|---|---|---|---|
-| Why Can't I Access the CRM After Signup? | Troubleshooting | FAQ | P1 | Launch Batch 3 | Launch / activation truth | Planned | Activate Your WizField Subscription | Verify current access rules. |
-| Why Does Billing Success Still Show Processing? | Troubleshooting | FAQ | P1 | Launch Batch 3 | Billing truth | Planned | What Happens After Stripe Checkout | Clarify processing state. |
-| Why Can't I Add Another Business? | Troubleshooting | FAQ | P1 | Launch Batch 3 | Billing truth; workspace truth | Planned | Shared Billing Accounts in WizField | Verify plan limits. |
-| Why Can't a Dispatcher Publish in Growth Center? | Troubleshooting | FAQ | P1 | Launch Batch 3 | Growth Center Source of Truth | Planned | Explicit Publishing | Verify role permissions. |
-| Why Did an AI SMS Draft Require Review Before Sending? | Troubleshooting | FAQ | P1 | Launch Batch 3 | WizField AI Master Source of Truth | Planned | How AI SMS Drafts Work | Clarify guarded send behavior. |
-| Why Did My Language Preference Fall Back to English? | Troubleshooting | FAQ | P1 | Launch Batch 3 | Language Store Source of Truth | Planned | Worker Language Preferences | Verify fallback behavior. |
-| What Happens When a Workspace Is Not Yet Activated? | Billing & Activation | FAQ | P1 | Launch Batch 3 | Launch / activation truth | Planned | Activate Your WizField Subscription | Verify user-facing state names. |
-| How Shared Billing Covers Multiple Businesses | Billing & Activation | Concept | P1 | Launch Batch 3 | Billing truth | Planned | Shared Billing Accounts in WizField | Avoid plan-limit overclaims. |
-| What Growth Center Does Not Do Yet | Growth Center | FAQ | P1 | Launch Batch 3 | Growth Center Source of Truth | Planned | What Is WizField Growth Center? | Do not present roadmap as current capability. |
-| What Language Store Does Not Translate in V1 | Language Store | FAQ | P1 | Launch Batch 3 | Language Store Source of Truth | Planned | What Is WizField Language Store? | Keep limitations direct. |
+| Why Can't I Access the CRM After Signup? | Troubleshooting | FAQ | P1 | Launch Batch 3 | WizField Master Source of Truth; WizField Engineering Closeout and Verification | Published | Activate Your WizField Subscription; Create Your WizField Workspace | Published in Package 4. |
+| Why Does Billing Success Still Show Processing? | Troubleshooting | FAQ | P1 | Launch Batch 3 | WizField Master Source of Truth; WizField Engineering Closeout and Verification | Published | Activate Your WizField Subscription | Published in Package 4. |
+| Why Can't I Add Another Business? | Troubleshooting | FAQ | P1 | Launch Batch 3 | WizField Master Source of Truth; WizField Engineering Closeout and Verification | Published | Shared Billing Accounts in WizField; Shared Billing Covers Multiple Businesses | Published in Package 4. |
+| Why Can't a Dispatcher Publish in Growth Center? | Troubleshooting | FAQ | P1 | Launch Batch 3 | Growth Center Source of Truth | Published | Explicit Publishing; What Is WizField Growth Center? | Published in Package 4. |
+| Why Did an AI SMS Draft Require Review Before Sending? | Troubleshooting | FAQ | P1 | Launch Batch 3 | WizField AI Master Source of Truth; AI Engineering Closeout and Gap Register | Published | How AI SMS Drafts Work; What WizField AI Does Not Automate | Published in Package 4. |
+| Why Did My Language Preference Fall Back to English? | Troubleshooting | FAQ | P1 | Launch Batch 3 | Language Store Source of Truth | Published | Worker Language Preferences; Final Customer Documents | Published in Package 4. |
+| What Happens When a Workspace Is Not Yet Activated? | Billing & Activation | FAQ | P1 | Launch Batch 3 | WizField Master Source of Truth; WizField Engineering Closeout and Verification | Published | Activate Your WizField Subscription; Billing Success Processing | Published in Package 4. |
+| How Shared Billing Covers Multiple Businesses | Billing & Activation | Concept | P1 | Launch Batch 3 | WizField Master Source of Truth; WizField Engineering Closeout and Verification | Published | Shared Billing Accounts in WizField; Why Can't I Add Another Business? | Published in Package 4. |
+| What Growth Center Does Not Do Yet | Growth Center | FAQ | P1 | Launch Batch 3 | Growth Center Source of Truth | Published | What Is WizField Growth Center?; Marketing Automations | Published in Package 4. |
+| What Language Store Does Not Translate in V1 | Language Store | FAQ | P1 | Launch Batch 3 | Language Store Source of Truth | Published | What Is WizField Language Store?; Customer-Facing English Output | Published in Package 4. |
 
 ---
 

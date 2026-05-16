@@ -1,0 +1,34 @@
+---
+title: Why Can't I Add Another Business?
+description: Learn why adding another WizField business may be blocked by plan coverage, shared billing entitlement, or membership context.
+---
+
+Adding another business may be blocked when the linked Shared Billing Account does not cover another organization, the active organization context is wrong, or the user's membership cannot perform the action.
+
+## Check Shared Billing Plan Coverage
+
+WizField plan enforcement resolves from organization context through the linked Shared Billing Account. The billing account is the payer and subscription authority.
+
+Current plan structure in local repo truth:
+
+| Plan | Business coverage |
+|---|---|
+| Starter | 1 business |
+| Pro | Up to 3 businesses |
+| Business | Expanded local model with no fixed hard cap currently enforced in local repo truth |
+
+## Understand Why Starter Can Block Another Business
+
+The engineering closeout records shared billing entitlement behavior where Starter blocked a second business. After safe local plan expansion, a second organization could be added under the same `billing_account_id`.
+
+This confirms that adding another business depends on billing coverage, not only on the user's desire to create another workspace.
+
+## Keep Business Data Separate After Adding a Business
+
+Adding another business creates or links another organization. It does not merge customer, lead, job, invoice, communication, or reporting records across businesses.
+
+Each organization remains its own tenant boundary. Users switch between organizations through the supported organization switcher.
+
+## Continue With Shared Billing
+
+For billing coverage details, read [How Shared Billing Covers Multiple Businesses](how-shared-billing-covers-multiple-businesses). For the workspace model, read [Multi-Business Workspaces in WizField](multi-business-workspaces-in-wizfield).

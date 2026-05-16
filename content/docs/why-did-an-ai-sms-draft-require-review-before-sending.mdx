@@ -1,0 +1,34 @@
+---
+title: Why Did an AI SMS Draft Require Review Before Sending?
+description: Learn why WizField AI SMS drafts require human review, guarded send permissions, and the canonical messaging path before reaching customers.
+---
+
+An AI SMS draft requires review because WizField treats Copilot output as a proposed customer message. Sending requires human confirmation, the right permissions, and the guarded messaging path.
+
+## Treat AI SMS Output as a Draft
+
+Operator Copilot can generate SMS follow-up drafts from calls. A draft is not a sent message.
+
+Staff can review, edit, or dismiss the draft before it becomes customer-facing. This keeps AI assistance inside a human-confirmed workflow.
+
+## Require Guarded Send Permissions
+
+Copilot guarded send requires `calls.view` and `messaging.send`. The Send affordance appears only when the guarded send feature and user permissions allow it.
+
+If a user can view calls but cannot send messages, WizField should not let that user send an AI-generated customer SMS.
+
+## Use the Canonical Messaging Path
+
+WizField sends Copilot customer SMS through the canonical messaging service. Copilot must not bypass WizField messaging execution truth through a telephony shortcut.
+
+A sent draft links to the outbound message record so WizField can preserve send proof.
+
+## Keep Outcome Observation Read-Only
+
+After sending, WizField can observe whether a customer replied after the outbound anchor message. This outcome is read-only.
+
+Outcome observation does not trigger auto-send, retries, drip sequences, CRM mutation, causal attribution, or self-learning behavior.
+
+## Continue With AI SMS Details
+
+For the full draft lifecycle, read [How AI SMS Drafts Work](how-ai-sms-drafts-work). For AI automation limits, read [What WizField AI Does Not Automate](what-wizfield-ai-does-not-automate).

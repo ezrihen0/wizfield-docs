@@ -1,0 +1,30 @@
+---
+title: Create Your WizField Workspace
+description: Learn how WizField workspace creation fits the self-serve onboarding model and how business data becomes organization-scoped.
+---
+
+A WizField workspace represents a business organization inside WizField. Self-serve signup, first-workspace creation, and authenticated add-business flows are part of the current verified product truth.
+
+## Create the First WizField Workspace During Signup
+
+WizField supports self-serve onboarding for the first business workspace. The engineering closeout verifies that signup and first-workspace creation exist and passed local rerun checks.
+
+The first workspace becomes an organization in WizField. Organization-owned records, settings, booking context, communication records, and customer-facing access must stay scoped to that organization.
+
+## Add Another Business From an Authenticated Account
+
+WizField also supports authenticated add-business flows. A user may access more than one business through memberships that link the user to organizations.
+
+Adding another business does not merge business data. Each organization remains its own tenant boundary, and WizField uses the active organization context to decide which business records the user can view or change.
+
+## Understand Memberships and Active Organization
+
+WizField resolves tenant-owned requests through actor, active organization, membership, role, and permissions. Roles and permissions belong to memberships rather than to users globally.
+
+Single-business users see the current workspace context. Multi-business users switch organizations through the supported switcher flow.
+
+## Check Billing Coverage for Additional Businesses
+
+Additional businesses may depend on the plan limits attached to the linked Shared Billing Account. Starter covers 1 business, Pro covers up to 3 businesses, and Business is the expanded local model with no fixed hard cap currently enforced in local repo truth.
+
+For billing behavior, read [Shared Billing Accounts in WizField](shared-billing-accounts-in-wizfield) and [Activate Your WizField Subscription](activate-your-wizfield-subscription).

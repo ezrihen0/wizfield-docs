@@ -1,0 +1,41 @@
+---
+title: What WizField AI Does Today
+description: Understand WizField AI Phases 0-4, including Business Brain V1, voice intake, Operator Copilot drafts, guarded send, and outcome observation.
+---
+
+WizField AI includes shipped Phases 0-4: AI foundation, Business Brain V1, voice intake, Operator Copilot SMS drafts, guarded human-confirmed SMS send, and read-only SMS outcome observation.
+
+## Understand the Shipped WizField AI Scope
+
+WizField AI is a bounded product program inside WizField. Its shipped scope includes:
+
+- AI foundation with tool registry, bounded context, recommendation-run audit, and a noop model path
+- Business Brain V1 with a deterministic home brief on `/home`
+- voice intake foundation and a Telnyx live voice pilot
+- Operator Copilot SMS follow-up drafts on `/calls`
+- guarded human-confirmed customer SMS send from Copilot
+- read-only Copilot SMS outcome observation
+
+Phase 5 and later product work, autonomous send, drip or sequence behavior, CRM mutation from outcomes, and self-learning claims are outside the shipped scope.
+
+## Keep WizField AI Scoped to the Active Organization
+
+WizField AI uses the active organization from the authenticated request actor. AI context must not trust client-supplied organization IDs.
+
+Recent calls, drafts, customer records, send behavior, and outcome hydration must remain organization-scoped. AI features must not create a shortcut around tenant isolation, membership validation, roles, or permissions.
+
+## Use Operator Copilot With Human Confirmation
+
+Operator Copilot can generate SMS follow-up drafts for calls. Draft generation may use an LLM path when enabled, but the product can also fall back to template generation.
+
+Sending is guarded. Copilot customer SMS send requires both `calls.view` and `messaging.send`, and the canonical send path goes through WizField messaging execution truth. AI does not bypass the product messaging service.
+
+## Read Outcomes Without Autonomous Follow-Up
+
+WizField AI outcome tracking is read-only. Outcome observation derives reply status from messaging thread records after an outbound anchor message.
+
+Outcome observation does not trigger auto-send, background send, drip campaigns, retry sequences, CRM mutation, causal attribution, or self-learning behavior.
+
+## Continue With Product Foundations
+
+For the tenant model AI must respect, read [Multi-Business Workspaces in WizField](multi-business-workspaces-in-wizfield). For the broader product identity, read [What Is WizField?](what-is-wizfield).

@@ -34,16 +34,16 @@ Status values:
 
 | Page Title | Category | Page Type | Priority | Batch | Truth Sources | Status | Internal Links Needed | Notes |
 |---|---|---|---|---|---|---|---|---|
-| Welcome to WizField Docs | Start Here | Concept | P0 | Launch Batch 1 | WizField Docs Master Plan v1 | Planned | What Is WizField; How WizField Works for Field-Service Businesses | Package 1 may publish only a minimal landing shell. |
-| What Is WizField? | Start Here | Concept | P0 | Launch Batch 1 | WizField Master Source of Truth | Planned | Welcome to WizField Docs; Multi-Business Workspaces in WizField | Verify shipped product positioning before drafting. |
-| How WizField Works for Field-Service Businesses | Start Here | Concept | P0 | Launch Batch 1 | WizField Master Source of Truth | Planned | What Is WizField; Create Your WizField Workspace | Avoid broad industry marketing claims. |
-| Create Your WizField Workspace | Getting Started | Quick Start | P0 | Launch Batch 1 | Launch / activation truth | Planned | Activate Your WizField Subscription; Understand Your First Workspace | Verify current signup path before drafting. |
-| Activate Your WizField Subscription | Getting Started | Workflow Guide | P0 | Launch Batch 1 | Launch / activation truth; billing truth | Planned | What Happens After Stripe Checkout; Shared Billing Accounts in WizField | Do not imply redirect alone activates access. |
-| Multi-Business Workspaces in WizField | Product Foundations | Concept | P0 | Launch Batch 1 | WizField Master Source of Truth | Planned | Organization Switching; Shared Billing Accounts in WizField | Verify organization-scoped behavior. |
-| Shared Billing Accounts in WizField | Product Foundations | Concept | P0 | Launch Batch 1 | Billing truth; WizField Master Source of Truth | Planned | Activate Your WizField Subscription; Multi-Business Workspaces in WizField | Clarify shared billing without overexplaining internals. |
-| What WizField AI Does Today | AI in WizField | Concept | P0 | Launch Batch 1 | WizField AI Master Source of Truth | Planned | What WizField AI Does Not Automate; How AI SMS Drafts Work | Avoid AI overclaims. |
-| What Is WizField Growth Center? | Growth Center | Concept | P0 | Launch Batch 1 | WizField Growth Center Source of Truth | Planned | Growth Center Opportunities; Explicit Publishing | Verify shipped Growth Center scope. |
-| What Is WizField Language Store? | Language Store | Concept | P0 | Launch Batch 1 | WizField Language Store Source of Truth | Planned | Worker Language Preferences; Customer-Facing English Output | Verify v1 translation boundaries. |
+| Welcome to WizField Docs | Start Here | Concept | P0 | Launch Batch 1 | WizField Docs Master Plan v1 | Published | What Is WizField; How WizField Works for Field-Service Businesses | Published in Package 2. |
+| What Is WizField? | Start Here | Concept | P0 | Launch Batch 1 | WizField Master Source of Truth | Published | Welcome to WizField Docs; Multi-Business Workspaces in WizField | Published in Package 2. |
+| How WizField Works for Field-Service Businesses | Start Here | Concept | P0 | Launch Batch 1 | WizField Master Source of Truth | Published | What Is WizField; Create Your WizField Workspace | Published in Package 2. |
+| Create Your WizField Workspace | Getting Started | Quick Start | P0 | Launch Batch 1 | WizField Master Source of Truth; WizField Engineering Closeout and Verification | Published | Activate Your WizField Subscription; Understand Your First Workspace | Published in Package 2 using clarified onboarding authority. |
+| Activate Your WizField Subscription | Getting Started | Workflow Guide | P0 | Launch Batch 1 | WizField Master Source of Truth; WizField Engineering Closeout and Verification | Published | What Happens After Stripe Checkout; Shared Billing Accounts in WizField | Published in Package 2 using clarified billing authority. |
+| Multi-Business Workspaces in WizField | Product Foundations | Concept | P0 | Launch Batch 1 | WizField Master Source of Truth | Published | Organization Switching; Shared Billing Accounts in WizField | Published in Package 2. |
+| Shared Billing Accounts in WizField | Product Foundations | Concept | P0 | Launch Batch 1 | Billing truth; WizField Master Source of Truth; WizField Engineering Closeout and Verification | Published | Activate Your WizField Subscription; Multi-Business Workspaces in WizField | Published in Package 2. |
+| What WizField AI Does Today | AI in WizField | Concept | P0 | Launch Batch 1 | WizField AI Master Source of Truth | Published | What WizField AI Does Not Automate; How AI SMS Drafts Work | Aligned in Package 2 correction pass with canonical AI source truth. |
+| What Is WizField Growth Center? | Growth Center | Concept | P0 | Launch Batch 1 | WizField Growth Center Source of Truth | Published | Growth Center Opportunities; Explicit Publishing | Aligned in Package 2 correction pass with canonical Growth Center source truth. |
+| What Is WizField Language Store? | Language Store | Concept | P0 | Launch Batch 1 | WizField Language Store Source of Truth | Published | Worker Language Preferences; Customer-Facing English Output | Aligned in Package 2 correction pass with canonical Language Store source truth. |
 
 ---
 

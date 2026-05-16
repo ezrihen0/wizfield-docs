@@ -1,0 +1,34 @@
+---
+title: Activate Your WizField Subscription
+description: Learn how WizField subscription activation works with Stripe, shared billing accounts, and verified webhook synchronization.
+---
+
+WizField subscription activation depends on Stripe-backed billing synchronization, not the checkout success redirect alone. Verified Stripe webhook events reconcile local billing state before billing is treated as active product truth.
+
+## Use Stripe Checkout for WizField Billing
+
+Stripe is the active billing provider for WizField. Billing uses a provider abstraction boundary, but Stripe is the current provider implementation.
+
+Owner-authenticated checkout exists in the completed engineering truth. Without live Stripe secrets configured, checkout fails safely with `billing_provider_not_configured` instead of pretending billing is configured.
+
+## Wait for Webhook-Confirmed Subscription State
+
+WizField does not activate billing from the success redirect page alone. Stripe is webhook-authoritative for subscription state synchronization.
+
+After checkout, verified Stripe webhook events reconcile local billing state. The billing success page must not be treated as proof that a subscription has already been activated.
+
+## Understand Shared Billing Accounts
+
+Billing authority lives at the Shared Billing Account layer. The `billing_accounts` model is the authoritative payer and subscription layer, while organization billing linkage projects coverage to organizations.
+
+A single Shared Billing Account may cover multiple organizations under one entitlement. Plan enforcement resolves from organization context through the linked Shared Billing Account.
+
+## Know What Remains Owner Activation Scope
+
+The engineering foundation for Stripe-first shared billing is complete, but live Stripe checkout execution and live webhook delivery remain owner activation scope.
+
+Program/public launch approval, production support details, final legal pages, monitoring choices, and production-like rerun evidence are also outside the completed engineering verdict.
+
+## Continue With Billing Coverage
+
+For coverage across multiple businesses, read [Shared Billing Accounts in WizField](shared-billing-accounts-in-wizfield). For workspace creation, read [Create Your WizField Workspace](create-your-wizfield-workspace).

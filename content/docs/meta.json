@@ -1,4 +1,15 @@
 {
   "title": "WizField Docs",
-  "pages": ["index"]
+  "pages": [
+    "index",
+    "what-is-wizfield",
+    "how-wizfield-works-for-field-service-businesses",
+    "create-your-wizfield-workspace",
+    "activate-your-wizfield-subscription",
+    "multi-business-workspaces-in-wizfield",
+    "shared-billing-accounts-in-wizfield",
+    "what-wizfield-ai-does-today",
+    "what-is-wizfield-growth-center",
+    "what-is-wizfield-language-store"
+  ]
 }

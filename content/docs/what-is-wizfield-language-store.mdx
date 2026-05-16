@@ -1,0 +1,58 @@
+---
+title: What Is WizField Language Store?
+description: Understand Language Store as a WizField add-on for worker language preferences, English customer output, organization-scoped entitlements, and snapshot-safe documents.
+---
+
+WizField Language Store helps multilingual field-service teams work internally in preferred languages while keeping supported customer-facing business output in professional English.
+
+## Understand the Two Language Store Layers
+
+Language Store has a workspace language layer and a customer English output layer.
+
+The workspace language layer lets an organization decide which worker languages are enabled. Each user can choose a preferred language within the active organization, and the same user may use different preferences in different organizations.
+
+The customer English output layer lets a worker write supported customer-facing dynamic content in an enabled non-English language, then generate English customer-facing output for supported V1 surfaces.
+
+## Keep Language Behavior Organization-Aware
+
+Language Store uses shared billing authority with organization-scoped activation and usage. Billing authority remains at the Shared Billing Account, while effective Language Store rights are enforced per covered organization.
+
+Language Store does not use floating translation capacity across all organizations on a billing account. V1 add-on packs are allocated to a specific covered organization unless a later product rule explicitly makes an add-on account-wide.
+
+## Understand V1 Plan Capacity
+
+English is always available and does not consume a paid language slot.
+
+| Plan | Worker language capacity | Customer-output translation units |
+|---|---|---|
+| Starter | English only; Language Store disabled by default | 0 monthly units |
+| Pro | 2 additional worker-language slots per covered organization | 250 monthly units per covered organization |
+| Business | 5 additional worker-language slots per covered organization | 1000 monthly units per covered organization |
+
+V1 recurring add-on packs can add one worker-language slot or 250 monthly customer-output translation units to one covered organization.
+
+## Generate English Output for Supported Customer-Facing Text
+
+Language Store V1 customer-facing translation starts with estimate and invoice line-item names, descriptions, and manual line text that becomes customer-facing snapshot text.
+
+V1 does not expand first-pass translation to every customer-visible field in WizField.
+
+## Preserve Customer-Facing Document Stability
+
+Language Store follows a review-and-snapshot pipeline. A worker enters source text, WizField generates an English customer-output draft, the user reviews the English output, and the final approved customer-facing output is persisted.
+
+Once a quote or invoice reaches the snapshot-safe point, the chosen English customer-facing output becomes immutable historical document truth. Later changes to enabled languages, preferences, prompts, providers, or translation quality must not rewrite already-snapshotted customer documents.
+
+## Know What Language Store Excludes in V1
+
+Language Store V1 excludes customer-selectable output language, bilingual PDFs, legal or compliance translation packs, warranty or jurisdiction translation packs, dynamic translation of already-sent documents, pooled floating translation capacity, and action-by-action customer billing.
+
+Receipts, job completion summaries, email bodies, and SMS bodies are also excluded until separately approved.
+
+## Find Language Store in WizField
+
+Language Store is a Settings or add-on-oriented authenticated surface. Settings may show the primary management entry point, and add-on, billing, or language-management contexts may deep-link to Language Store.
+
+Language Store must not be added to primary shell navigation unless a future owner information-architecture decision changes that.
+
+For workspace boundaries, read [Multi-Business Workspaces in WizField](multi-business-workspaces-in-wizfield). For product billing boundaries, read [Shared Billing Accounts in WizField](shared-billing-accounts-in-wizfield).

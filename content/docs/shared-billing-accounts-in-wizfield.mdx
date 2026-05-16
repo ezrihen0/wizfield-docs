@@ -1,0 +1,40 @@
+---
+title: Shared Billing Accounts in WizField
+description: Learn how WizField shared billing accounts cover one or more businesses while keeping product billing separate from CRM records.
+---
+
+A Shared Billing Account is the payer and subscription layer for WizField. One Shared Billing Account may cover multiple organizations, while each organization's business data remains scoped to that organization.
+
+## Understand the Shared Billing Account Layer
+
+WizField billing authority is shared-billing-account based, not only workspace-by-workspace. The `billing_accounts` layer is the authoritative payer and subscription layer.
+
+The organization billing linkage is coverage and entitlement projection. It connects organizations to billing coverage without becoming the subscription authority itself.
+
+## Cover Multiple Organizations Under One Entitlement
+
+A single Shared Billing Account may cover multiple organizations under one entitlement. Plan enforcement resolves from the active organization context through the linked Shared Billing Account.
+
+Current plan structure in local repo truth:
+
+| Plan | Business coverage |
+|---|---|
+| Starter | 1 business |
+| Pro | Up to 3 businesses |
+| Business | Expanded local model with no fixed hard cap currently enforced in local repo truth |
+
+## Separate Platform Billing From CRM Payments
+
+WizField platform billing is separate from tenant CRM invoice and payment records. A customer invoice inside a business workspace is not the same thing as the owner's WizField subscription billing.
+
+This separation keeps SaaS subscription authority distinct from organization-owned service business records.
+
+## Understand Verified Billing Behavior
+
+Shared billing entitlement behavior passed local engineering verification. Starter blocked a second business, and after safe local plan expansion, a second organization could be added under the same `billing_account_id`.
+
+Live Stripe checkout execution and live webhook delivery remain owner activation scope, not completed engineering evidence.
+
+## Continue With Activation
+
+For subscription activation behavior, read [Activate Your WizField Subscription](activate-your-wizfield-subscription). For the workspace model, read [Multi-Business Workspaces in WizField](multi-business-workspaces-in-wizfield).

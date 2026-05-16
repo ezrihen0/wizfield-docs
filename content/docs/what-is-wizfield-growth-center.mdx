@@ -1,0 +1,50 @@
+---
+title: What Is WizField Growth Center?
+description: Understand Growth Center as organization-scoped marketing operations for profiles, drafts, channels, publishing, opportunities, campaigns, automations, and analytics.
+---
+
+WizField Growth Center is organization-scoped marketing operations inside WizField. It includes marketing profiles, draft composition, channels, explicit publishing, opportunities, campaign shells, automations, and internal analytics.
+
+## Use Growth Center for Marketing Operations
+
+Growth Center lives under the authenticated `/marketing` route family. It is not a separate public marketing site and not a generic marketing advice library.
+
+Growth Center V1 includes:
+
+- marketing profile management
+- multi-platform draft composition and variants
+- optional calendar metadata
+- Google and Meta OAuth-backed channel targets
+- explicit publish jobs and publish attempts
+- CRM-derived opportunities
+- campaign shells with slot coverage
+- V1 opportunity-triggered automations
+- internal analytics
+
+## Keep Growth Center Organization-Scoped
+
+Growth Center uses the active organization from the authenticated session. Growth Center APIs must not accept a client-supplied organization ID for switching context.
+
+All Growth Center tables are organization-scoped. Regular tenant users should not see or operate on another organization's marketing profiles, drafts, opportunities, campaigns, automations, publish jobs, or analytics.
+
+## Publish Growth Center Content Explicitly
+
+Growth Center publishing is always explicit. A publish job with a UTC `scheduled_at` time or a publish-now action controls outbound publishing.
+
+A draft `scheduled_at` value is metadata only. Draft metadata never silently posts content.
+
+## Understand Growth Center Role Boundaries
+
+Marketing office roles can enter Growth Center, but capabilities vary by role. Owners and admins can connect or disconnect OAuth channels. Publisher roles can enqueue publishing, manage opportunities, and mutate campaigns or automations.
+
+Dispatchers have read access in several areas but are not publisher roles for publishing, opportunity refresh, campaign mutations, or automation mutations.
+
+## Know What Growth Center Does Not Do in V1
+
+Growth Center V1 does not include Instagram outbound publishing, runtime Growth Center monetization or Stripe entitlement gates, AI copy generation runtime, warehouse analytics rollups, provider engagement metrics, or an SEO / Website Content Engine.
+
+Growth Center analytics are internal funnel analytics. They are not ROI dashboards, ad dashboards, reach reports, impression reports, or provider engagement metrics.
+
+## Continue With Related Concepts
+
+For WizField's overall product model, read [What Is WizField?](what-is-wizfield). For how business data remains scoped while users operate the product, read [Multi-Business Workspaces in WizField](multi-business-workspaces-in-wizfield).

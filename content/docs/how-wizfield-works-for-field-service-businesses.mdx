@@ -1,0 +1,42 @@
+---
+title: How WizField Works for Field-Service Businesses
+description: Learn how WizField organizes field-service work across customers, leads, jobs, estimates, invoices, communications, and reports.
+---
+
+WizField helps field-service businesses manage operational work from one system. It keeps customer, job, billing, communication, reporting, booking, and portal-adjacent activity tied to the active business workspace.
+
+## Organize Field-Service Work in WizField
+
+WizField is anchored in field-service operations. A business can use WizField to manage the work that typically surrounds service delivery, from intake through customer records and follow-up documents.
+
+The operating model includes:
+
+- calls and lead intake
+- customer history
+- jobs and scheduling context
+- estimates and invoices
+- payments and reports
+- SMS and communication records
+- inspections, warranties, and other customer-facing documents
+
+## Keep Business Records Scoped to One Organization
+
+WizField uses organizations as the top-level boundary for business data. Tenant-owned records must remain organization-scoped, and cross-organization access is forbidden.
+
+This organization boundary applies to normal product surfaces such as dashboard, search, customers, leads, jobs, estimates, invoices, settings, calls, messaging, reports, booking, and portal-adjacent context.
+
+## Switch Between Businesses Explicitly
+
+Users with access to more than one organization switch businesses through an explicit supported switcher flow. WizField does not trust an arbitrary frontend organization ID as the authority for tenant access.
+
+After a successful organization switch, WizField navigates to `/home` so stale client state is cleared and the active organization context changes across the app.
+
+## Understand Public Booking and Customer Access
+
+Public booking and customer-access flows must resolve the target organization before touching organization-owned records. Public routes must not expose internal records by bare UUID alone.
+
+Token-based customer access must prove validity, expiry status, target resource ownership, and correct organization scope before the customer-facing resource is available.
+
+## Continue With Workspace Concepts
+
+For the product model behind multi-business use, read [Multi-Business Workspaces in WizField](multi-business-workspaces-in-wizfield). For billing coverage across businesses, read [Shared Billing Accounts in WizField](shared-billing-accounts-in-wizfield).

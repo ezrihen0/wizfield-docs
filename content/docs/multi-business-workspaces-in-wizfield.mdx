@@ -1,0 +1,34 @@
+---
+title: Multi-Business Workspaces in WizField
+description: Understand how WizField supports users who manage more than one business through organization-scoped workspaces.
+---
+
+Multi-business workspaces let one WizField user access more than one business while keeping each business's data scoped to its own organization. Users switch organizations explicitly through the supported switcher flow.
+
+## Understand Organizations as Workspace Boundaries
+
+In WizField, organizations are the top-level tenant boundary for business data. Users are global identities, and memberships connect users to organizations.
+
+This structure allows one person to participate in multiple businesses without turning all business records into one shared pool. Organization-owned records stay attached to the business that owns them.
+
+## Use Memberships for Roles and Permissions
+
+Roles and permissions belong to memberships, not globally to users. A user can therefore have different access in different organizations.
+
+Every tenant-owned request resolves the actor, active organization, membership, role, and permissions. Backend membership validation is authoritative.
+
+## Switch Organizations Explicitly
+
+Multi-business users switch organizations by explicit click through the supported switcher flow. The active organization comes from the authenticated session, not from an arbitrary frontend organization ID.
+
+After a successful switch, WizField navigates to `/home` so stale client state is cleared and the app reloads under the selected organization context.
+
+## Keep Each Business Context Separate
+
+The active organization changes the context for dashboard, customers, leads, jobs, estimates, invoices, settings, search, calls, messaging, reports, booking, and portal-adjacent surfaces.
+
+Cross-organization access is forbidden. Tenant-owned reads, updates, deletes, counts, and lists must remain organization-scoped.
+
+## Continue With Shared Billing
+
+Multi-business access and billing coverage are related but separate concepts. Read [Shared Billing Accounts in WizField](shared-billing-accounts-in-wizfield) to understand how one billing account can cover multiple organizations under one entitlement.

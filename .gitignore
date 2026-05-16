@@ -3,6 +3,7 @@
 
 # generated content
 .source
+/wizfield-docs/
 
 # test & build
 /coverage

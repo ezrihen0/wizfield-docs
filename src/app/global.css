@@ -1,12 +1,14 @@
-@import 'tailwindcss';
-@import 'fumadocs-ui/css/neutral.css';
-@import 'fumadocs-ui/css/preset.css';
+@import "tailwindcss";
+@import "fumadocs-ui/css/neutral.css";
+@import "fumadocs-ui/css/preset.css";
 
 html {
   scrollbar-gutter: stable;
 }
 
 html > body[data-scroll-locked] {
+  /* biome-ignore lint/complexity/noImportantStyles: Preserve the scroll-lock layout override provided by the docs UI shell. */
   margin-right: 0px !important;
+  /* biome-ignore lint/complexity/noImportantStyles: Preserve the scroll-lock layout override provided by the docs UI shell. */
   --removed-body-scroll-bar-size: 0px !important;
 }

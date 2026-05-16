@@ -1,45 +1,46 @@
-# docs-wizfield
+# WizField Docs
 
-This is a Next.js application generated with
-[Create Fumadocs](https://github.com/fuma-nama/fumadocs).
+This repository contains the public docs site for WizField. It is a Next.js and Fumadocs application for publishing structured product knowledge at `docs.wizfield.com`.
 
-Run development server:
+## Development
+
+Install dependencies and run the development server:
 
 ```bash
+npm install
 npm run dev
-# or
-pnpm dev
-# or
-yarn dev
 ```
 
 Open http://localhost:3000 with your browser to see the result.
 
-## Explore
+## Project Structure
 
-In the project, you can see:
+- `content/docs`: Public MDX pages published under `/docs`.
+- `internal`: Internal planning, writing standards, and content backlog files. Do not publish these files as public docs pages.
+- `src/lib/source.ts`: Fumadocs content source adapter.
+- `src/lib/layout.shared.tsx`: Shared Fumadocs layout options.
+- `src/app/api/search/route.ts`: Search route for the docs site.
+- `src/app/llms.txt/route.ts`: LLM index route.
+- `src/app/llms-full.txt/route.ts`: Full LLM-readable docs export route.
 
-- `lib/source.ts`: Code for content source adapter, [`loader()`](https://fumadocs.dev/docs/headless/source-api) provides the interface to access your content.
-- `lib/layout.shared.tsx`: Shared options for layouts, optional but preferred to keep.
+## Content Rules
 
-| Route                     | Description                                            |
-| ------------------------- | ------------------------------------------------------ |
-| `app/(home)`              | The route group for your landing page and other pages. |
-| `app/docs`                | The documentation layout and pages.                    |
-| `app/api/search/route.ts` | The Route Handler for search.                          |
+Public docs pages must follow `internal/WizField_Public_Knowledge_Standard_v1.md`. Internal planning files, execution prompts, verification logs, and implementation-only notes must remain internal.
 
-### Fumadocs MDX
+Before publishing a public docs page:
 
-A `source.config.ts` config file has been included, you can customise different options like frontmatter schema.
+1. Confirm the page exists in `internal/WizField_Docs_Content_Backlog_v1.md`.
+2. Verify the page against canonical product truth.
+3. Include required frontmatter with `title` and `description`.
+4. Start the page with a direct opening answer block.
+5. Avoid publishing roadmap work as current product behavior.
 
-Read the [Introduction](https://fumadocs.dev/docs/mdx) for further details.
+## Verification
 
-## Learn More
+Run these checks before handoff:
 
-To learn more about Next.js and Fumadocs, take a look at the following
-resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js
-  features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [Fumadocs](https://fumadocs.dev) - learn about Fumadocs
+```bash
+npm run lint
+npm run types:check
+npm run build
+```
